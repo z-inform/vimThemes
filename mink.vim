@@ -213,6 +213,15 @@ else
     exec "hi Underlined     cterm=BOLD   ctermfg=" . <SID>X(77) . " ctermbg=" . "NONE"
     exec "hi TaglistTagName cterm=BOLD   ctermfg=" . <SID>X(39) . " ctermbg=" . "NONE"
 
+    hi CursorLine term=none cterm=none guibg=#2e2e37
+    hi CursorLineNr term=none cterm=none guibg=#2e2e37
+    exec "hi CursorLineNr cterm=NONE ctermfg=26"
+    exec "hi YcmErrorSign cterm=BOLD ctermfg=" . 160 . "ctermbg=" . "NONE"
+    exec "hi YcmWarningSign cterm=BOLD ctermfg=" . 178 . "ctermbg=" . "NONE"
+    exec "hi YcmInlayHint cterm=NONE ctermfg=" . 59 . "ctermbg=" . "NONE"
+    exec "hi rustCommentLineDoc cterm=NONE ctermfg=" . 153 . "ctermbg=" . "NONE"
+    exec "hi rustSelf cterm=NONE ctermfg=" . 202 . "ctermbg=NONE"
+
     if v:version >= 700
         exec "hi Pmenu          cterm=NONE   ctermfg=" . <SID>X(87) . " ctermbg=" . <SID>X(82)
         exec "hi PmenuSel       cterm=BOLD   ctermfg=" . <SID>X(87) . " ctermbg=" . <SID>X(38)
